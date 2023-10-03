@@ -44,15 +44,12 @@
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
 
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "root"
+	"remoteUser": "root",
 
     // Specify what requirements your host must have
-    /*
     "hostRequirements": {
-        "cpus": 0,
-        "gpu": 0,
-        "memory": "1Gb",
-        "storage": "10Gb"
+        "cpus": 2,
+        "memory": "8gb",
+        "storage": "32gb"
     }
-    */
 }
