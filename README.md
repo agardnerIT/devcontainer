@@ -6,6 +6,8 @@ This uses [the sample Python devcontainer](https://github.com/devcontainers/imag
 
 Also interesting (but untested) is https://github.com/loft-sh/devpod which promises to read this file but spin up on local machines / any cloud.
 
+Don't forget to delete your codespace after use, see below!
+
 ## Usage
 
 To launch a new codespace, click the `Code` button, change to the `Codespaces` tab and click `Create codespace on main`.
@@ -39,6 +41,11 @@ In this example, a custom container is built from the [Dockerfile](.devcontainer
 After the container is built and running, the `postStartCommand` (see [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)) is used to run a flask web application server automatically for you.
 
 The `forwardPorts` directive in [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json) is used to privately (only to your GitHub user) expose port 8080 and make the application available.
+
+
+## Codespace teardown
+
+Go to https://github.com/codespaces and delete your codespace to avoid unneccessary charges!
 
 ## Links
 
