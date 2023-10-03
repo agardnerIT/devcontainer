@@ -39,7 +39,7 @@
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
@@ -48,9 +48,9 @@
 	"remoteUser": "root",
 
     // "onCreateCommand": "",
-    // "postStartCommand": "",
     // Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+    "postStartCommand": "flask --app=app run --port=8080",
 
 
     // Specify what requirements your host must have
